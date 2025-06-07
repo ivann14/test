@@ -1,0 +1,30 @@
+
+
+---------------------------------- TEXT PREZENTACIE
+
+Spustime si bash v docker containeri, ktory som vytvoril z mojho predchystaneho docker imagu, kde sa nachadza sandbox s korektne
+nakonfigurovanym pythonom, tensorflow, protobufom a object detection api.
+
+Zobrazime si obsah sandboxu, kde sa nachadzaju skripty na trenovanie, evaluaciu a export modelov,
+2 datasety s dronmi, neuronove siete MobileNetSSD v oboch verziach a dalsie potrebne subory.
+
+Na vytrenovanom a exportovanom modeli spustime detekciu dronov na testovacej sade obrazkov.
+Testovaciu sadu obrazkov som zmensil skriptom na cca 113 obrazkov aby detekcia prebehla v casovom limite.
+
+A kym to prebehne poukazem na dalsie vlastnosti sandboxu.
+
+Moj docker image je zverejneny aj na DockerHube, takze je jednoduche ho stiahnut, popr je mozne si ho vytvorit z mojho repozitaru na GitHube.
+Vyhodou tohoto sandboxu je to, ze je mozne ho spustit na akomkolvek pocitaci, ktory ma nainstalovany docker
+ a ziadna dalsia konfiguracia nie je potrebna a mozme sa sustredit len na
+trenovanie, vyhodnocovanie a exportovanie novych modelov. 
+
+
+Skripty su parametrizovane a teda je mozne ich spustit s inymi parametrami ako su tie, ktore som pouzil ja.
+Preto je velmi jednoduche pridat do sandboxu dalsie datasety s dronmi a spustit trenovanie na nich, nasledne evaluaciu a export.
+
+Po prebehnut detekcie sa vytvoril zip subor s vysledkami detekcie, ktory si prekopirujem z kontajnera do svojho pocitaca.
+Zip subor si rozbalime a pozrieme sa na vysledky detekcie.
+
+
+
+
