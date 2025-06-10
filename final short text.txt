@@ -1,0 +1,14 @@
+file part1.mp4
+file part2.mp4
+
+
+Spustame docker container s mojim sandboxom
+Ukazeme si prikaz na dotrenovanie neuronovej siete na nasom datasete
+Dalsim uzitocnym prikazom je spustenie evaluacie na nasej dotrenovanej siete
+Vidime vysledky evaluacie spustenej nad testovacou sadou obrazkov
+Dalsim prikazom vyexportujeme model
+Nad vyexportovanym modelom spustame detekciu
+Nasledne si prekopirujeme vysledok na hostitelsky pocitac a pozrieme sa na vysledky
+Vidime ze vsetky prikazy su parametrizovatelne (fine tuning parametrizujeme manualnym prepisom pipeline.configu neruonovej siete) 
+cize pridanim dalsieho datasetu mozme lahko pokracovat v trenovani/evaluacii 
+Video je zostrihane kedze vsetky akcie zaberaju viac casu ako mame
